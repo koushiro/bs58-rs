@@ -5,11 +5,10 @@ use core::fmt;
 #[cfg(feature = "alloc")]
 use alloc::vec::Vec;
 
-use crate::Check;
+use crate::Alphabet;
 #[cfg(any(feature = "check", feature = "cb58"))]
 use crate::CHECKSUM_LEN;
-
-use crate::Alphabet;
+use crate::Check;
 
 /// A builder for setting up the alphabet and output of a base58 decode.
 ///

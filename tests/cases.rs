@@ -84,7 +84,10 @@ pub const TEST_CASES: &[(&[u8], &str)] = &[
         ],
         "5Hx15HFGyep2CfPxsJKe2fXJsCVn5DEiyoeGGF6JZjGbTRnqfiD",
     ),
-    (&DIGITS_OF_PI, "KeThPkHTv5nsa4576Z47NqEtuSfUcKwv7YeueZ8dquGTDeBpimjGEZ1a7k1FCz8m8FEBcoJZjP5Aui6eKfPjdmGooHKtEPRbVotw6mRxNU3WbLtAH41mea9g8AB9Qe1DAFDReBWa67ZEP6ApWGhw9Dfr2vVXkLXEWj6W8HFApw4DKK"),
+    (
+        &DIGITS_OF_PI,
+        "KeThPkHTv5nsa4576Z47NqEtuSfUcKwv7YeueZ8dquGTDeBpimjGEZ1a7k1FCz8m8FEBcoJZjP5Aui6eKfPjdmGooHKtEPRbVotw6mRxNU3WbLtAH41mea9g8AB9Qe1DAFDReBWa67ZEP6ApWGhw9Dfr2vVXkLXEWj6W8HFApw4DKK",
+    ),
 ];
 
 #[cfg(feature = "check")]
@@ -113,5 +116,8 @@ pub const CHECK_TEST_CASES: &[(&[u8], &str)] = &[
         ],
         "dctKSXBbv2My3TGGUgTFjkxu1A9JM3Sscd5FydY4dkxnfwA7q",
     ),
-    (&DIGITS_OF_PI, "371hJQw3jVfFQtQfQ1NnUFV4Z3i166yKJe3yyPAvJziEfUenJBD8SM6xGFop9cfCDCn4j9HcT9fS73jgGp8XZzYKmSxjxLcxfgETzg4BcDHLgHSynSFDGR5wJ58NkZSv2mVxvqVwG8hqxNFXrWms66ppx45yAjc7dYuBXqCPZ2GatCMmrhuX"),
+    (
+        &DIGITS_OF_PI,
+        "371hJQw3jVfFQtQfQ1NnUFV4Z3i166yKJe3yyPAvJziEfUenJBD8SM6xGFop9cfCDCn4j9HcT9fS73jgGp8XZzYKmSxjxLcxfgETzg4BcDHLgHSynSFDGR5wJ58NkZSv2mVxvqVwG8hqxNFXrWms66ppx45yAjc7dYuBXqCPZ2GatCMmrhuX",
+    ),
 ];

@@ -5,11 +5,10 @@ use core::fmt;
 #[cfg(feature = "alloc")]
 use alloc::{string::String, vec::Vec};
 
-use crate::Check;
+use crate::Alphabet;
 #[cfg(any(feature = "check", feature = "cb58"))]
 use crate::CHECKSUM_LEN;
-
-use crate::Alphabet;
+use crate::Check;
 
 /// A builder for setting up the alphabet and output of a base58 encode.
 #[allow(missing_debug_implementations)]
@@ -428,7 +427,7 @@ impl<'a, I: AsRef<[u8]>> EncodeBuilder<'a, I> {
 /// are
 fn max_encoded_len(len: usize) -> usize {
     // log_2(256) / log_2(58) ≈ 1.37.  Assume 1.5 for easier calculation.
-    len + (len + 1) / 2
+    len + len.div_ceil(2)
 }
 
 fn encode_into<'a, I>(input: I, output: &mut [u8], alpha: &Alphabet) -> Result<usize>

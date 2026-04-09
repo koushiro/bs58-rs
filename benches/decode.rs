@@ -1,4 +1,4 @@
-use criterion::{criterion_group, criterion_main, Criterion};
+use criterion::{Criterion, criterion_group, criterion_main};
 
 macro_rules! group_decode {
     ($criterion:ident, $name:expr, $encoded:expr => $decoded:expr, $decoded_length:expr) => {{
